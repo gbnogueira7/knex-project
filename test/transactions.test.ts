@@ -100,7 +100,7 @@ describe('transactions routes', () => {
     const summaryResponse = await request(app.server)
       .get('/transactions/summary')
       .set('Cookie', cookies)
-      .expect(200)
+      .expect(201)
 
     expect(summaryResponse.body.summary).toEqual({
       amount: 3000,
