@@ -1,5 +1,4 @@
 import { knex as setupknex, Knex } from 'knex'
-import 'dotenv/config'
 import { env } from './env'
 
 if (!process.env.DATABASE_URL) {
